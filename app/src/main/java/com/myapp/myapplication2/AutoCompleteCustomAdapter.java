@@ -58,7 +58,6 @@ public class AutoCompleteCustomAdapter extends ArrayAdapter<nasaInfo> {
                 String URL = "https://images-api.nasa.gov/search?q=" + pattern + "&media_type=image";
                 Loader loader = new Loader();
                 recommends = loader.getResults(URL, getContext());
-                L
             }
             filterResults.values = recommends;
             filterResults.count = recommends.size();
